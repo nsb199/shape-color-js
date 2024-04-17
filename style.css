@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fadeIn 1s ease; /* Smooth animation when the page loads */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#container {
+    text-align: center;
+}
+
+#shape {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 20px auto;
+    border-radius: 50%; /* Default shape is circle */
+}
+
+#buttons {
+    margin-top: 5rem;
+}
+
+.square {
+    border-radius: 0;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 173.2px solid red; /* Use CSS triangle for triangle shape */
+}
+
+/* Define styles for other shapes as needed */
